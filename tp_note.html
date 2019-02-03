@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet"></head>
+        <body onload='main()'>
+            <div class="row">
+                <canvas class="col-8" id='dawin-webgl'>
+                    Utilisez un navigateur compatible avec WebGL
+                </canvas>
+                <div class="col-4">
+                    <h3 class="row align-center">- - Settings - -</h3>
+                    <h5>Translation</h5>
+                    <div class="row">
+                        <span class="col-2 align-center">X</span>
+                        <p class="col-10">
+                            <input id="translateX" max="10" min="-10" step="0.1" type="range"/>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <span class="col-2 align-center">Y</span>
+                        <p class="col-10">
+                            <input id="translateY" max="10" min="-10" step="0.1" type="range"/>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <span class="col-2 align-center">Z</span>
+                        <p class="col-10">
+                            <input id="translateZ" max="10" min="-10" step="0.1" type="range"/>
+                        </p>
+                    </div>
+                    <h5>Rotation</h5>
+                    <div class="row">
+                        <span class="col-2 align-center">X</span>
+                        <p class="col-10">
+                            <input id="rotateX" max="3.14" min="-3.14" step="0.01" type="range"/>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <span class="col-2 align-center">Y</span>
+                        <p class="col-10">
+                            <input id="rotateY" max="3.14" min="-3.14" step="0.01" type="range"/>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <span class="col-2 align-center">Z</span>
+                        <p class="col-10">
+                            <input id="rotateZ" max="3.14" min="-3.14" step="0.01" type="range"/>
+                        </p>
+                    </div>
+                    <h5>Caméra</h5>
+                    <div class="row">
+                        <span class="col-2 align-center">Zoom</span>
+                        <p class="col-10">
+                            <input id="zoom" max="5" min="0.1" step="0.1" type="range" value="1"/>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <span class="col-2 align-center">FOV</span>
+                        <p class="col-10">
+                            <input id="fov" max="120" min="30" step="1" type="range"/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </body>
+        <script src='gl-matrix-min.js'></script>
+        <script src='tp_note.js'></script>
+    </html>
